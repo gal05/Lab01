@@ -20,15 +20,18 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="0dp"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/transparent"
+        android:clickable="true"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
+        app:fabSize="mini"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/imageButton10"
+        app:rippleColor="@android:color/transparent"
         app:srcCompat="@drawable/ic_quality" />
 
     <ImageButton
@@ -38,7 +41,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@android:color/transparent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton3"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/ic_mouse" />
 
@@ -94,41 +97,61 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button4"
+            <EditText
+                android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
 
-            <Button
-                android:id="@+id/button2"
+            <EditText
+                android:id="@+id/editText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
 
-            <Button
-                android:id="@+id/button3"
+            <EditText
+                android:id="@+id/editText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress" />
 
-            <Button
-                android:id="@+id/button5"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/primary"
+                    android:text="Cancelar" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:text="buscar" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
