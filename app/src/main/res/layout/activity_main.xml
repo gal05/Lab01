@@ -140,7 +140,10 @@
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
                     android:background="@color/primary"
-                    android:text="Cancelar" />
+                    android:text="Cancelar"
+                    android:paddingEnd="15dp"
+                    android:drawableRight="@drawable/ic_bomb"
+                    />
 
                 <Button
                     android:id="@+id/button2"
@@ -149,7 +152,10 @@
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
-                    android:text="buscar" />
+                    android:background="@color/colorAccent"
+                    android:text="buscar"
+                    android:paddingEnd="15dp"
+                    android:drawableRight="@drawable/ic_reddit"/>
             </LinearLayout>
 
         </LinearLayout>
